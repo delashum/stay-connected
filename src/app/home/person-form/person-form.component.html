@@ -1,0 +1,14 @@
+<ActionBar title="{{ person.name }}">
+  <ActionItem ios.position="right" ios.systemIcon="3" (tap)="save()"></ActionItem>
+</ActionBar>
+<StackLayout>
+  <RadDataForm [source]="editable_person">
+    <TKEntityProperty tkDataFormProperty name="name" index="0">
+      <TKPropertyEditor tkEntityPropertyEditor type="Text"></TKPropertyEditor>
+    </TKEntityProperty>
+    <TKEntityProperty tkDataFormProperty name="frequency" index="1">
+      <TKPropertyEditor tkEntityPropertyEditor type="Number"></TKPropertyEditor>
+    </TKEntityProperty>
+  </RadDataForm>
+  <Button class="delete" text="delete" (tap)="delete()"></Button>
+</StackLayout>

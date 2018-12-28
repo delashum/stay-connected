@@ -1,0 +1,16 @@
+<GridLayout rows="auto,*">
+  <StackLayout class="action-bar" columns="*, *" width="100%">
+    <Button class="btn-cancel" text="Cancel" (tap)="cancel()"></Button>
+    <Button col="1" class="btn-save" text="Save" (tap)="save_person()"></Button>
+  </StackLayout>
+  <GridLayout row="1">
+    <RadDataForm [source]="person">
+      <TKEntityProperty tkDataFormProperty name="name" index="0">
+        <TKPropertyEditor tkEntityPropertyEditor type="Text"></TKPropertyEditor>
+      </TKEntityProperty>
+      <TKEntityProperty tkDataFormProperty name="frequency" index="1">
+        <TKPropertyEditor tkEntityPropertyEditor type="Number"></TKPropertyEditor>
+      </TKEntityProperty>
+    </RadDataForm>
+  </GridLayout>
+</GridLayout>

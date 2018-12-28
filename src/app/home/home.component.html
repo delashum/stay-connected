@@ -1,0 +1,21 @@
+<ActionBar title="My People" class="action-bar">
+  <ActionItem ios.position="right" ios.systemIcon="4" (tap)="add_person()"></ActionItem>
+</ActionBar>
+
+<GridLayout class="page">
+  <RadListView [items]="people">
+    <ng-template let-item="item" let-i="index">
+      <StackLayout backgroundColor="white" class="list-item" columns="*, 60, 60" width="100%" (tap)="goto_person(item)">
+        <Label class="name" [text]="item.name"></Label>
+        <Button class="contact" text="contact" (tap)="contact_person(item)"></Button>
+        <Label
+          col="1"
+          class="countdown"
+          [class.overdue]="is_overdue(item)"
+          [class.never]="is_never(item)"
+          [text]="person_countdown(item)"
+        ></Label>
+      </StackLayout>
+    </ng-template>
+  </RadListView>
+</GridLayout>

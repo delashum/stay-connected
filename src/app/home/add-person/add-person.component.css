@@ -1,0 +1,59 @@
+.action-bar {
+  orientation: horizontal;
+  padding-top: 20;
+  padding-bottom: 20;
+  background-color: #fff;
+}
+
+.form-container {
+  background-color: #fff;
+  padding: 20;
+}
+
+.btn-cancel {
+  text-align: left;
+  width: 50%;
+  padding-left: 20;
+  color: #ff9d6e;
+  background-color: transparent;
+  border-color: transparent;
+  border-width: 1;
+  text-transform: capitalize;
+  font-size: 24px;
+}
+
+.btn-save {
+  text-align: right;
+  width: 50%;
+  padding-right: 20;
+  color: #0061ef;
+  font-weight: bold;
+  border-color: transparent;
+  border-width: 1;
+  background-color: transparent;
+  text-transform: capitalize;
+  font-size: 24px;
+}
+
+.label {
+  font-size: 12;
+  color: #9b8e94;
+}
+
+.createdAt {
+  border-top-width: 1;
+  border-top-color: #fbf8f8;
+  padding-top: 10;
+}
+
+.label.error {
+  color: #ff9d6e;
+}
+
+.night .label.error {
+  color: #0061ef;
+}
+
+.textarea {
+  height: 60;
+}

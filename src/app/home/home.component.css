@@ -1,0 +1,24 @@
+.list-item {
+  orientation: horizontal;
+  padding: 18px 18px 0px 18px;
+  margin-top: 6px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 2px;
+}
+
+.list-item .name {
+  width: 50%;
+}
+
+.list-item .countdown {
+  width: 50%;
+  text-align: right;
+  color: green;
+}
+
+.list-item .countdown.overdue {
+  color: red;
+}
+.list-item .countdown.never {
+  color: rgb(148, 148, 148);
+}
